@@ -1,0 +1,218 @@
+/*RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*CSS PROPIO*/
+/*body{
+	background-color: black;
+}*/
+
+header {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 0px;
+}
+nav {
+	text-align: right;
+}
+#nav-content {
+	display: inline-block;
+}
+header nav {
+	background: #000000;
+	overflow: hidden; /*ocultar contenido que sobrepasa nuestro contenedor, además nos limpia nuestros float:left*/
+	
+}
+header nav ul {
+	list-style: none; /*quita los puntos del ul - li*/
+}
+header nav ul li {
+	float: left;
+}
+header nav ul li a {
+	padding: 10px 20px;
+	display: block; /*sino se pone display:block, el padding solo funciona hacia los lados*/
+	color: #fff;
+	text-decoration: none;
+}
+header nav ul li a:hover {
+	background: #75acec;
+}
+#logo {
+	width: 200px;
+	height: 100px;
+	position: relative;
+}
+#portada-content{
+	text-align: center;
+}
+
+#portada1{ /*falta img responsive*/ 
+	top: 0; 
+	left: 0;
+	/*overflow-x: initial;
+	overflow-y: initial;*/
+	min-width: 100%;
+	height: 100%;
+	position: absolute;
+	margin: 0 auto;
+	z-index: -1;
+	/*display: block;*/
+}
+
+#textoportada1 {
+	position: relative;
+	color: #fff;
+	text-align: center;
+	margin-top: 25%;
+}
+#tp11 {
+	font-size: 22px;
+}
+#tp12{
+	font-size: 90px;
+	font-weight: bold;
+}
+#tp13{
+	font-size: 20px;
+}
+section {
+	top: 100%;
+	position: absolute;
+	display: inline-block;
+	height: 100px;
+	width: 100%;
+}
+
+.texto {
+	position: relative;
+	height: 300px;
+	width: 100%;
+	background-color: #fff;
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+#content-div1, #content-div2, #content-div3{
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	height: 730px;
+	text-align: center;
+}
+.cube1{
+	position: relative;
+	margin: 0 auto;
+	display: inline-block;
+	background-color: red;
+	width: 33%;
+	height: 360px;
+}
+footer {
+	background-color: black;
+	width: 100%;
+	height: 200px;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.content-texto {
+	width: 40%;
+	margin: auto;
+	margin-top: 80px;
+}
+.ptexto1 {
+	margin: auto;
+	font-size: 35px;
+	font-weight: bold;
+
+}
+.ptexto2{
+	font-size: 20px;
+	text-align: justify;
+}
+.ptexto3{
+	font-size: 15px;
+	font-weight: bold;
+}
+
+footer {
+	color: #fff;
+	text-align: center;
+}
+.informacion {
+	position: relative;
+	top: 30%;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+/*Animacion CUBE1*/
+
+ .cube1 {
+      animation: colorchange 20s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 20s; /* Chrome and Safari */
+      -webkit-animation-iteration-count: infinite;
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background: red;}
+      25%  {background: yellow;}
+      50%  {background: blue;}
+      75%  {background: green;}
+      100% {background: red;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: red;}
+      25%  {background: yellow;}
+      50%  {background: blue;}
+      75%  {background: green;}
+      100% {background: red;}
+    }
